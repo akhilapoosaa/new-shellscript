@@ -2,4 +2,4 @@
 
 #this is sample script
 
-echo "learning first script"
+echo "learning my first script"
