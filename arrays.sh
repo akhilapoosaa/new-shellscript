@@ -13,4 +13,6 @@ fruits=("apple" "banana" "mango" "orange")
 
 echo "print first fruit: ${fruits[0]}"
 echo "print second fruit: ${fruits[1]}"
+echo "all fruits: ${fruits[@]}"
+
 
