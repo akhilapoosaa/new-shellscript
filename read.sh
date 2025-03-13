@@ -4,7 +4,7 @@
 
 echo "enter your username"
 
-read -s USERNAME
+read -s USERNAME  #here -s is used to hide the input #the value entered by user will be automatically stored in USERNAME variable
 
 echo "enter your password"
 
