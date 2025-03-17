@@ -20,4 +20,4 @@ then
     exit 1
 else
     echo "git is installed successfully"
-fi
+fi 
