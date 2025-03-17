@@ -13,3 +13,11 @@ else
 fi
 
 yum install mysql -y  #installing mysql server
+
+if [ $? -ne 0 ] #if the exit status of the previous command is not equal to 0 then the command is not executed successfully
+then
+    echo "ERROR:: mysql server is not installed"
+    exit 1
+else
+    echo "mysql server is installed successfully"
+fi
