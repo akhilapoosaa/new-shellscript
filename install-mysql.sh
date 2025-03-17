@@ -11,4 +11,4 @@ else
     echo "you are the root user"    
 fi
 
-yum install mysql-server -y  #installing mysql server
+yum install mysql -y  #installing mysql server
