@@ -28,4 +28,4 @@ validate $?  "installing mysql" #passing the exit status of the previous command
 
 yum install git -y
 
-validate $? "installing git" 
+validate $?  "installing git" 
