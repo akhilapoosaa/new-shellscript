@@ -24,8 +24,8 @@ fi
 
 yum install mysql -y
 
-validate $?  "installing mysql" #passing the exit status of the previous command to the function
+VALIDATE $?  "installing mysql" #passing the exit status of the previous command to the function
 
 yum install git -y
 
-validate $?  "installing git" 
+VALIDATE $?  "installing git" 
