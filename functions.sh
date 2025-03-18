@@ -9,10 +9,10 @@ ID=$(id -u)
 VALIDATE(){
     if [ $? -ne 0 ]
     then 
-        echo "error git is not installed"
+        echo "not installed"
         exit 1
     else
-        echo "git is installed successfully"
+        echo "installed successfully"
     fi 
 }
 
