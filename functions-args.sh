@@ -2,7 +2,7 @@
 
 #passings args in functions
 
-ID=$(id -u)
+ID=(id -u)
 
 VALIDATE(){
     if [ $1 -ne 0 ]   # $? is $1 arg that is the exit status 
