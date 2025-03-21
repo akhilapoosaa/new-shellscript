@@ -5,9 +5,9 @@
 ID=(id -u)
 
 VALIDATE(){
-    if [ $1 -ne 0 ]    # $1 is the exit status 
+    if [ $1 -ne 0 ]   # $? is $1 arg that is the exit status 
     then
-        echo "ERROR:: $2 is failed"     # $2 is the message 
+        echo "ERROR:: $2 is failed"  #after validate at the bottom installing mysql/git message is $2 arg   
         exit 1
     else
         echo "$2 is successful"
