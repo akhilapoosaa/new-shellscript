@@ -15,7 +15,6 @@ VALIDATE(){
         echo "$2 is successful"
     fi
 }
-
 if [ $ID -ne 0 ]
 then 
     echo "error you are not the root user, please switch to root user"
