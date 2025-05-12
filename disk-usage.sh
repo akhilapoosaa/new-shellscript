@@ -21,3 +21,5 @@ do
 done <<< "$DISK_USAGE"  
 echo -e "Message:\n$message"
 # <<< is used to read the output of the command into a variable      
+
+echo "$message" | mail -s "Disk usage above threshold" akhilapoosa2829@gmail.com
