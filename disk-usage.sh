@@ -12,11 +12,12 @@ message=""  #message variable to store the output
 
 while IFS= read line
 do 
-      usage=$(echo line | awk '{print %6F}' | cut -d % -f1)
-      partition=$(echo line | awk '{print $1}')
-      if [ $usage -gt $DISK_THRESHOLD ]
+      usage=$(echo $line | awk '{print %6F}' | cut -d % -f1)
+      partition=$(echo $line | awk '{print $1F}')
+      if [ $usage -ge $DISK_THRESHOLD ]
       then
-          message+="Disk usage is above threshold for partition $partition: $usage\n"
+          message+="Disk usage is above threshold for partition $partition: $usage"
       fi 
 done <<< "$DISK_USAGE"  
+echo "Message: $message"
 # <<< is used to read the output of the command into a variable      
