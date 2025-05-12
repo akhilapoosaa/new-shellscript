@@ -16,7 +16,7 @@ do
       partition=$(echo $line | awk '{print $1F}')
       if [ $usage -ge $DISK_THRESHOLD ]
       then
-          message+="Disk usage is above threshold for partition $partition: $usage"
+          message="Disk usage is above threshold for partition $partition: $usage"
       fi 
 done <<< "$DISK_USAGE"  
 echo "Message: $message"
