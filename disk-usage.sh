@@ -19,5 +19,5 @@ do
           message+="Disk usage is above threshold for partition $partition: $usage\n"
       fi 
 done <<< "$DISK_USAGE"  
-echo "Message: $message\n"
+echo "Message: \n$message"
 # <<< is used to read the output of the command into a variable      
