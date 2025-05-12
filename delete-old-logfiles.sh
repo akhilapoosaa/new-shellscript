@@ -25,3 +25,11 @@ FILES_TO_DELETE=$(find $SOURCE_DIR -type f -name "*.log" -mtime +14)
 # -type f option is used to find files
 # -name option is used to find files with the name *.log
 # -mtime option is used to find files that are older than 7 days
+
+while read -r line
+do 
+    echo "Deleting file: $line"
+done <<< "$FILES_TO_DELETE" 
+# <<< is used to read the output of the command into a variable
+# while loop is used to iterate over the files to delete
+# read -r option is used to read the line without interpreting backslashes
