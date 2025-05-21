@@ -2,7 +2,7 @@
 
 #delete old log files
 # This script is used to delete old log files from the /tmp directory.
-# It deletes all log files that are older than 7 days.
+# It deletes all log files that are older than 14 days.
 
 SOURCE_DIR=/tmp/shellscript-logs
 
@@ -24,7 +24,7 @@ fi
 FILES_TO_DELETE=$(find $SOURCE_DIR -type f -name "*.log" -mtime +14)
 # -type f option is used to find files
 # -name option is used to find files with the name *.log
-# -mtime option is used to find files that are older than 7 days
+# -mtime option is used to find files that are older than 14 days
 
 while read -r line
 do 
